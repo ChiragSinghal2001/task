@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  .pricingdiv {
+    margin-top: 50px;
+    background-color: #efdf94;
+    overflow-y: hidden;
+  }
+  
+  .buttonprice {
+    border: none;
+    padding: 6px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e5b91c;
+    width: 300px;
+    font-weight: 600;
+  }
+  
+  .buttonprice.clicked {
+    background-color: #28a745;
+  }
+  
+  .buttonprice:active {
+    animation: vibrate 0.1s linear;
+  }
+  
+  @keyframes vibrate {
+    0% { transform: translate(0); }
+    25% { transform: translate(-2px, -2px); }
+    50% { transform: translate(0, 0); }
+    75% { transform: translate(2px, 2px); }
+    100% { transform: translate(0); }
+  }
+  
+  .cards {
+    padding: 40px 10px; /* Adjust padding for smaller screens */
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap onto multiple lines */
+    justify-content: space-around;
+  }
+  
+  .pricingCard {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    width: 100%; /* Make cards take full width on smaller screens */
+    max-width: 320px; /* Limit maximum width of cards */
+    margin-bottom: 20px; /* Add spacing between cards */
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  .textbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+  }
+  
+  .textlin {
+    color: #747372;
+    font-weight: 700;
+    margin-left: 5px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .button {
+      width: 150px; /* Adjust button width for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,38 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  .navbar-links a.clicked {
+    background-color: #e5b91c;
+    color: black;
+    
+  }
+  
+  .navbar-brand a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 700;
+    padding: 7px; /* Add padding */
+    border-radius: 5px; /* Add border-radius */
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
